@@ -1,0 +1,187 @@
+{
+  "app": "Mobile Banking Prototype",
+  "screens": [
+    {
+      "id": "home",
+      "name": "Home Screen",
+      "elements": [
+        {
+          "type": "button",
+          "label": "Deposit",
+          "target": "deposit"
+        },
+        {
+          "type": "button",
+          "label": "Transactions",
+          "target": "transactions"
+        },
+        {
+          "type": "button",
+          "label": "Profile",
+          "target": "profile"
+        }
+      ]
+    },
+    {
+      "id": "deposit",
+      "name": "Deposit Screen",
+      "elements": [
+        {
+          "type": "input",
+          "label": "Amount"
+        },
+        {
+          "type": "button",
+          "label": "Confirm Deposit",
+          "target": "confirm_deposit"
+        }
+      ]
+    },
+    {
+      "id": "confirm_deposit",
+      "name": "Confirm Deposit Screen",
+      "elements": [
+        {
+          "type": "text",
+          "value": "Confirm deposit of {Amount}?"
+        },
+        {
+          "type": "button",
+          "label": "Yes, Confirm",
+          "target": "success"
+        },
+        {
+          "type": "button",
+          "label": "Cancel",
+          "target": "deposit"
+        }
+      ]
+    },
+    {
+      "id": "success",
+      "name": "Success Screen",
+      "elements": [
+        {
+          "type": "text",
+          "value": "Deposit Successful \u2705"
+        },
+        {
+          "type": "button",
+          "label": "Back to Home",
+          "target": "home"
+        }
+      ]
+    },
+    {
+      "id": "transactions",
+      "name": "Transactions Screen",
+      "elements": [
+        {
+          "type": "list",
+          "label": "Recent Transactions"
+        },
+        {
+          "type": "button",
+          "label": "Back",
+          "target": "home"
+        }
+      ]
+    },
+    {
+      "id": "profile",
+      "name": "Profile Screen",
+      "elements": [
+        {
+          "type": "text",
+          "value": "User Info"
+        },
+        {
+          "type": "button",
+          "label": "Edit Profile",
+          "target": "edit_profile"
+        },
+        {
+          "type": "button",
+          "label": "Back",
+          "target": "home"
+        }
+      ]
+    },
+    {
+      "id": "edit_profile",
+      "name": "Edit Profile Screen",
+      "elements": [
+        {
+          "type": "input",
+          "label": "Name"
+        },
+        {
+          "type": "input",
+          "label": "Email"
+        },
+        {
+          "type": "button",
+          "label": "Save",
+          "target": "profile"
+        }
+      ]
+    }
+  ],
+  "arrows": [
+    {
+      "from": "home",
+      "element": "Deposit",
+      "to": "deposit"
+    },
+    {
+      "from": "home",
+      "element": "Transactions",
+      "to": "transactions"
+    },
+    {
+      "from": "home",
+      "element": "Profile",
+      "to": "profile"
+    },
+    {
+      "from": "deposit",
+      "element": "Confirm Deposit",
+      "to": "confirm_deposit"
+    },
+    {
+      "from": "confirm_deposit",
+      "element": "Yes, Confirm",
+      "to": "success"
+    },
+    {
+      "from": "confirm_deposit",
+      "element": "Cancel",
+      "to": "deposit"
+    },
+    {
+      "from": "success",
+      "element": "Back to Home",
+      "to": "home"
+    },
+    {
+      "from": "transactions",
+      "element": "Back",
+      "to": "home"
+    },
+    {
+      "from": "profile",
+      "element": "Edit Profile",
+      "to": "edit_profile"
+    },
+    {
+      "from": "profile",
+      "element": "Back",
+      "to": "home"
+    },
+    {
+      "from": "edit_profile",
+      "element": "Save",
+      "to": "profile"
+    }
+  ]
+}
