@@ -90,11 +90,4 @@ Example quick-start ideas:
 
 ---
 
-## ⚡ Quick wins I can do next
-- Generate a live demo (React/React Native) from mobile_banking_prototype.json
-- Add sample data and UI states (loading, error, empty)
-- Add badges (CI, coverage, license) and dynamic GitHub stats to this README
-
----
-
 Thanks for checking out my profile. If you want this README personalized (name, photo, more project details, links, badges, or GitHub stats), tell me the details below and I’ll update it.
